@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:background="#ffea00"
+    android:alignmentMode="alignBounds"
+    android:columnOrderPreserved="true"
+
+    android:columnCount="7"
+    >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:layout_columnSpan="7"/>
+    <Space
+        android:layout_column="0"
+        android:layout_columnSpan="7"
+        android:layout_width="match_parent"
+
+        android:layout_height="30dp"
+
+        />
+
+    <TextView
+        android:text="Clock"
+        android:textSize="28dip"
+        android:id="@+id/clockView"
+
+        android:layout_columnSpan="7"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        android:text="Date"
+        android:textSize="15dip"
+        android:id="@+id/dateView"
+
+        android:layout_columnSpan="7"
+        android:layout_gravity="center_horizontal"
+        />
+    <Space
+        android:layout_column="0"
+        android:layout_columnSpan="7"
+        android:layout_width="match_parent"
+
+        android:layout_height="20dp"
+
+        />
+
+
+    <TextView
+        android:text="22C"
+        android:textSize="32dip"
+        android:id="@+id/currentTempView"
+        android:layout_column="0"
+        android:layout_columnSpan="3"
+        android:layout_gravity="center_horizontal"
+        android:layout_columnWeight="1"
+        />
+    <TextView
+        android:text="22%"
+        android:textSize="32dip"
+        android:layout_column="4"
+        android:id="@+id/currentHumView"
+
+        android:layout_columnSpan="3"
+        android:layout_gravity="center_horizontal"
+        android:layout_columnWeight="1"
+        />
+    <Space
+        android:layout_column="0"
+        android:layout_columnSpan="7"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+
+        />
+    <TextView
+        android:text="In the last 24 hour"
+        android:textSize="14dip"
+        android:layout_column="0"
+
+        android:layout_columnSpan="7"
+        android:layout_gravity="center"
+        android:layout_columnWeight="1"
+        />
+    <Space
+        android:layout_column="0"
+        android:layout_columnSpan="7"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+
+        />
+    <TextView
+        android:text="    Average"
+        android:textSize="14dip"
+        android:layout_column="0"
+
+        android:layout_columnSpan="7"
+        android:layout_gravity="left"
+        android:layout_columnWeight="1"
+        />
+    <Space
+        android:layout_column="0"
+        android:layout_columnSpan="7"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+
+        />
+    <TextView
+        android:text="22C"
+        android:textSize="28dip"
+        android:id="@+id/avgTempView"
+        android:layout_column="0"
+        android:layout_columnSpan="3"
+        android:layout_gravity="center_horizontal"
+        android:layout_columnWeight="1"
+        />
+    <TextView
+        android:text="22%"
+        android:textSize="28dip"
+        android:layout_column="4"
+        android:id="@+id/avgHumView"
+
+        android:layout_columnSpan="3"
+        android:layout_gravity="center_horizontal"
+        android:layout_columnWeight="1"
+        />
+
+    <Space
+        android:layout_column="0"
+        android:layout_columnSpan="7"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+
+        />
+    <TextView
+        android:text="22C"
+        android:textSize="24dip"
+        android:layout_column="0"
+        android:id="@+id/maxTempView"
+        android:layout_columnSpan="1"
+        android:layout_gravity="center_horizontal"
+        android:layout_columnWeight="1"
+        />
+    <View
+        android:layout_column="1"
+        android:layout_width="0.75dip"
+        android:layout_height="64dip"
+        android:background="#ffff"
+        android:layout_rowSpan="2"/>
+    <TextView
+        android:text="22C"
+        android:textSize="24dip"
+        android:layout_column="2"
+        android:id="@+id/minTempView"
+        android:layout_columnSpan="1"
+        android:layout_gravity="center_horizontal"
+        android:layout_columnWeight="1"
+
+        />
+    <View
+        android:layout_column="3"
+        android:layout_width="1.5dip"
+        android:layout_height="64dip"
+        android:background="#ffff"
+        android:layout_rowSpan="2"/>
+    <TextView
+        android:text="22%"
+        android:textSize="24dip"
+        android:id="@+id/maxHumView"
+        android:layout_column="4"
+        android:layout_columnSpan="1"
+        android:layout_gravity="center_horizontal"
+        android:layout_columnWeight="1"
+        />
+    <View
+        android:layout_column="5"
+        android:layout_width="0.75dip"
+        android:layout_height="64dip"
+        android:background="#ffff"
+        android:layout_rowSpan="2"/>
+    <TextView
+        android:text="22%"
+        android:textSize="24dip"
+        android:layout_column="6"
+        android:id="@+id/minHumView"
+        android:layout_columnSpan="1"
+        android:layout_gravity="center_horizontal"
+        android:layout_columnWeight="1"
+        />
+    <TextView
+        android:text="Max"
+        android:textSize="10dip"
+        android:layout_column="0"
+        android:layout_columnSpan="1"
+        android:layout_gravity="center_horizontal"
+        android:layout_columnWeight="1"/>
+    <TextView
+        android:text="Min"
+        android:textSize="10dip"
+        android:layout_column="2"
+
+        android:layout_columnSpan="1"
+        android:layout_gravity="center_horizontal"
+        android:layout_columnWeight="1"
+
+        />
+    <TextView
+        android:text="Max"
+        android:textSize="10dip"
+        android:layout_column="4"
+        android:layout_columnSpan="1"
+        android:layout_gravity="center_horizontal"
+        android:layout_columnWeight="1"
+        />
+    <TextView
+        android:text="Min"
+        android:textSize="10dip"
+        android:layout_column="6"
+
+        android:layout_columnSpan="1"
+        android:layout_gravity="center_horizontal"
+        android:layout_columnWeight="1"
+        />
+    <View
+        android:layout_column="0"
+        android:layout_width="match_parent"
+        android:layout_gravity="fill"
+        android:background="#ffff"
+        android:layout_columnSpan="7"/>
+
+</GridLayout>

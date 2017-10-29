@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_timer1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary" />
+
+
+    <Space
+        android:layout_below="@id/toolbar"
+
+        android:id="@+id/space1"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+
+        />
+    <Switch
+        android:id="@+id/switchMotion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:switchPadding="60dp"
+
+        android:layout_below="@+id/space1"
+        android:layout_centerHorizontal="true"
+        android:text="Motion Detection" />
+    <Space
+        android:layout_below="@id/switchMotion"
+
+        android:id="@+id/space2"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+
+        />
+    <TextView
+
+        android:id="@+id/resultView"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/space2"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:text="Turn On at"
+        android:textSize="18sp" />
+
+
+    <TimePicker
+        android:id="@+id/timePickerOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resultView"
+        android:layout_centerHorizontal="true"
+        android:timePickerMode="spinner"
+        tools:targetApi="lollipop" />
+
+    <TextView
+
+        android:id="@+id/resultView2"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timePickerOn"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:text="Turn Off at"
+        android:textSize="18sp" />
+
+    <TimePicker
+        android:id="@+id/timePickerOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resultView2"
+        android:layout_centerHorizontal="true"
+        android:timePickerMode="spinner" />
+
+    <Button
+
+        android:id="@+id/setTimeButton"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/timePickerOff"
+        android:text="Set Time" />
+
+    <Button
+
+        android:id="@+id/checkButton"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timePickerOff"
+        android:layout_centerHorizontal="true"
+        android:text="Check" />
+
+
+    <Button
+
+        android:id="@+id/startOrEndServiceButton"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/timePickerOff"
+        android:text="End Service" />
+
+
+
+
+</RelativeLayout>

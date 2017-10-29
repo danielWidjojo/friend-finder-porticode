@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Sensors">
+        <menu>
+        <item
+            android:id="@+id/nav_living_room"
+            android:icon="@drawable/weather_partlycloudy"
+            android:title="Living Room" />
+        <item
+            android:id="@+id/nav_inner_garden"
+            android:icon="@drawable/weather_partlycloudy"
+            android:title="Inner Garden" />
+        </menu>
+    </item>
+
+    <item android:title="Timers">
+        <menu>
+        <item
+            android:id="@+id/nav_timer1"
+            android:icon="@drawable/ic_schedule_black_24dp"
+            android:title="Timer 1" />
+        <item
+            android:id="@+id/nav_timer2"
+            android:icon="@drawable/ic_schedule_black_24dp"
+            android:title="Timer 2" />
+
+        </menu>
+    </item>
+    <item
+        android:id="@+id/nav_manage"
+        android:icon="@drawable/ic_menu_manage"
+        android:title="Tools" />
+    <!--
+        <item android:title="Communicate">
+            <menu>
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="Share" />
+                <item
+                    android:id="@+id/nav_send"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="Send" />
+            </menu>
+        </item>
+     -->
+    </menu>
+
